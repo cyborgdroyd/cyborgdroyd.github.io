@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>George Droyd data compiler</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<script  src="./script.js"></script>
+<!-- partial:index.partial.html -->
+<link href='https://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+<title>Nigga Link [ONLINE]</title>
+
+ <audio id="background-music" loop>
+    <source src="track.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'élément audio.
+  </audio>
+
+  <!-- Script pour démarrer la musique au clic -->
+  <script>
+    const audio = document.getElementById('background-music');
+    document.body.addEventListener('click', () => {
+      audio.play().catch(err => console.error('La lecture audio a échoué :', err));
+    }, { once: true }); // L'événement ne se déclenche qu'une seule fois
+  </script>
+
+
+<div id="welcome-login">
+  <h1>George Droyd data compiler</h1>
+  <input id="login-input" type="text" placeholder="Agent username">
+</div>
+  
+<div id="terminal">
+    <div>Loading...<span id="blinking">_</span></div>
+</div>
+
+<div id="root">></div>
+<input id="input" type="text" placeholder="Enter your command here..." autofocus>
+
+<div id="time">Trace time: 0:00</div>
+
+<ol id="objectives">
+  Welcome to the George Droyd data compiler.<br><br>
+  <div id="won">Perfect job agent! The data to start George Droyd will be sent to China. You should make sure everything there goes right, password is JFK1488, please connect to <a href="map.html" id="droydnet-link">droydnet</a> to proceed. </div>
+  <div id="lost">You got tracked down. Epstein has already send nukes on our headquarters. Computer autodistruction process will clean up the rest...</div><br>
+  Objectives:
+  <li id="help">Type 'help' in the console, at the bottom of the screen.</li>
+  <li id="list">Check the list of the currently available applications.</li>
+  <li id="connect">Connect to the nearest fent reactor (connect nearest.fent.reactor).</li>
+  <li id="trojan">Send Propylon to the fentanyl reactor you just connected to (send Propylon).</li>
+  <li id="disconnect">Disconnect from the fentanyl reactor before you are traced down.</li>
+</ol>
+
+<footer>
+  &copy; Copyright 1939-1945 by Sasha. All rights and wrongs reserved.
+</footer>
+</body>
+</html>
